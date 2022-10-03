@@ -1,9 +1,13 @@
 import React from 'react';
 import './Footer.scss';
+import { ScrollTop } from '../../components';
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+      Footer
+      <ScrollTop />
+    </div>
   )
 }
 
