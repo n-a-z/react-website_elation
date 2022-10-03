@@ -3,7 +3,7 @@ import './Button.scss';
 
 function Button() {
     return (
-        <div>Button</div>
+        <div className="my-btn">Button</div>
     )
 }
 

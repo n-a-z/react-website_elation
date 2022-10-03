@@ -2,6 +2,7 @@ import React from 'react';
 import './Splash.scss';
 import Slider from "react-slick";
 import { Button, Navbar } from '../../components';
+import splashOne from '../../images/splash_01.png';
 
 function Splash() {
   const settings = {
@@ -30,7 +31,7 @@ function Splash() {
               </div>
             </div>
             <div className="splash__col col-12 col-md-6">
-              <img src="images/splash_01.png" className='splash__img' alt="Splash" />
+              <img src={splashOne} className='splash__img' alt="Splash" />
             </div>
           </div>
         </div>
@@ -45,7 +46,7 @@ function Splash() {
               </div>
             </div>
             <div className="splash__col col-12 col-md-6">
-              <img src="images/splash_01.png" className='splash__img' alt="Splash" />
+              <img src={splashOne} className='splash__img' alt="Splash" />
             </div>
           </div>
         </div>

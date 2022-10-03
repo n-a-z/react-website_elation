@@ -1,0 +1,38 @@
+.scroll-top-progress {
+	display: grid;
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	height: 60px;
+	width: 60px;
+	opacity: 0;
+	place-items: center;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	cursor: auto;
+	transition: all 0.4s;
+
+	@media (max-width: 767px) {
+		height: 55px;
+		width: 55px;
+		bottom: 20px;
+		right: 15px;
+	}
+
+	&--active {
+		// bottom: 32px;
+		cursor: pointer;
+		opacity: 1;
+	}
+
+	&__value {
+		display: block;
+		height: calc(100% - 15px);
+		width: calc(100% - 15px);
+		background-color: #ffffff;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		color: #001a2e;
+	}
+}
