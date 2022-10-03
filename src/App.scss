@@ -1,0 +1,55 @@
+:root {
+	--color-white: #fff;
+	--color-green: #0cce6b;
+	--color-blue: #390049;
+	--color-yellow: #f2dc5d;
+}
+
+//Colors
+$color-white: #fff;
+$color-green: #0cce6b;
+$color-blue: #390049;
+$color-yellow: #f2dc5d;
+
+//Fonts
+@font-face {
+	font-family: 'Poppins';
+	src: url('./fonts/Poppins-Regular.ttf');
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('./fonts/Poppins-Medium.ttf');
+	font-weight: 500;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url('./fonts/Poppins-SemiBold.ttf');
+	font-weight: 600;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+.underline {
+	background-image: url('../public/images/underline_yellow.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 90%;
+}
