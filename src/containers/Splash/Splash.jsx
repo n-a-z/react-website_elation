@@ -1,6 +1,7 @@
 import React from 'react';
 import './Splash.scss';
 import Slider from "react-slick";
+import { Button, Navbar } from '../../components';
 
 function Splash() {
   const settings = {
@@ -12,9 +13,12 @@ function Splash() {
     arrows: false
   };
   return (
-    <div className='splash'>
+    <section className='splash'>
+
+      <Navbar />
+
       <Slider {...settings}>
-        
+
         <div className="splash__slide">
           <div className="splash__row row">
             <div className="splash__col col-12 col-md-6">
@@ -22,6 +26,7 @@ function Splash() {
                 A <span className='underline'>proven</span> formula to reinvigorate and advance your business.
               </h1>
               <div className="splash__btn">
+                <Button />
               </div>
             </div>
             <div className="splash__col col-12 col-md-6">
@@ -46,7 +51,7 @@ function Splash() {
         </div>
 
       </Slider>
-    </div>
+    </section>
   )
 }
 

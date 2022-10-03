@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.scss';
-import Splash from './components/Splash/Splash'
+import { Splash, Footer } from './containers';
 
 const App = () => {
 	return (
 		<div className="App">
 		  <Splash />
+		  <Footer />
 		</div>
 	  );
 };
