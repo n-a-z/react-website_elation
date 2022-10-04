@@ -25,13 +25,16 @@ function Navbar() {
                 <img src={logoSmall} className='navbar__img' alt="Logo" />
                 <ul className="my-navbar__list">
                     <li className='my-navbar__menu-item'>
-                        <a href="#Us" className='my-navbar__menu-link' onClick={handleClick}>Us</a>
+                        <a href="#us" className='my-navbar__menu-link' onClick={handleClick}>Us</a>
                     </li>
                     <li className='my-navbar__menu-item'>
-                        <a href="#You" className='my-navbar__menu-link' onClick={handleClick}><span className='underline'>You</span></a>
+                        <a href="#you" className='my-navbar__menu-link' onClick={handleClick}><span className='underline'>You</span></a>
                     </li>
                     <li className='my-navbar__menu-item'>
-                        <a href="#Services" className='my-navbar__menu-link' onClick={handleClick}> Services</a>
+                        <a href="#services" className='my-navbar__menu-link' onClick={handleClick}>Services</a>
+                    </li>
+                    <li className='my-navbar__menu-item'>
+                        <a href="#cta" className='my-navbar__menu-link' onClick={handleClick}>Contact</a>
                     </li>
                 </ul>
                 <div className="my-navbar__icon-container">

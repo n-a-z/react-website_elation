@@ -4,7 +4,7 @@ import { Button } from '../../components';
 
 function Cta() {
     return (
-        <section className="cta">
+        <section className="cta" id="cta">
             <div className="cta__container container">
                 <div className="cta__box">
                     <p className="cta__txt">There’s never been<br />a better time to start.</p>

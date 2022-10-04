@@ -32,7 +32,7 @@ const cardData = [
 
 function Awesome() {
     return (
-        <section className="awesome">
+        <section className="awesome" id="services">
             <div className="awesome__container container">
                 <div className="awesome__row row">
                     <div className="awesome__col col-12">

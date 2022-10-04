@@ -4,7 +4,7 @@ import { Button } from '../../components';
 
 function Successful() {
     return (
-        <section className="successful">
+        <section className="successful" id="us">
             <div className="successful__container container">
                 <div className="successful__row row">
                     <div className="successful__col col-12 col-lg-6">
