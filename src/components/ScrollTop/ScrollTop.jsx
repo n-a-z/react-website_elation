@@ -18,7 +18,7 @@ function ScrollTop() {
         scrollProgress.addEventListener('click', () => {
             document.documentElement.scrollTop = 0;
         });
-        scrollProgress.style.background = `conic-gradient(#7f8c8d ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+        scrollProgress.style.background = `conic-gradient(#0cce6b ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
     };
     window.onscroll = calcScrollValue;
     window.onload = calcScrollValue;
