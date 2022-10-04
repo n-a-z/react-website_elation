@@ -20,12 +20,20 @@
     }
 
     &__txt {
-        font-size: 34px;
+        font-size: 24px;
+
+        @media (min-width: 992px) {
+            font-size: 34px;
+        }
     }
 
     &__title {
-        font-size: 74px;
+        font-size: 54px;
         font-weight: 600;
         margin-bottom: 1em;
+
+        @media (min-width: 992px) {
+            font-size: 74px;
+        }
     }
 }

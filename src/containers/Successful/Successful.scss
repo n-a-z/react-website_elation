@@ -3,7 +3,7 @@
     color: var(--color-blue);
     padding-top: 125px;
     padding-bottom: 125px;
-    margin-bottom: -50px;
+    margin-bottom: -75px;
 
     &__col {
         display: flex;
@@ -35,7 +35,11 @@
 
     &__title {
         color: var(--color-green);
-        font-size: 54px;
+        font-size: 34px;
         font-weight: 600;
+
+        @media (min-width: 992px) {
+            font-size: 54px;
+        }
     }
 }
