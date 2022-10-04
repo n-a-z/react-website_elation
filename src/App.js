@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Splash, Footer, Navbar, Cta, Successful } from './containers';
+import { Splash, Footer, Navbar, Cta, Successful, Awesome } from './containers';
 
 const App = () => {
 	return (
@@ -8,6 +8,7 @@ const App = () => {
 		  <Navbar />
 		  <Splash />
 		  <Successful />
+		  <Awesome />
 		  <Cta />
 		  <Footer />
 		</div>
