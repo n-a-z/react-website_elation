@@ -1,21 +1,30 @@
 .my-btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 20px 50px;
-    display: inline-block;
-    transition: 0.6s;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 20px 50px;
+	display: inline-block;
+	transition: 0.6s;
+	color: var(--color-white);
 
-    &:hover {
-        transform: scale(1.05);
+	&:hover {
+		transform: scale(1.05);
+		color: var(--color-white);
+	}
+
+	&--clipped {
+		clip-path: polygon(0 3%, 95% 0, 100% 100%, 0 95%);
+		background-color: var(--color-yellow);
+	}
+
+	&--border {
+		background-image: url("data:image/svg+xml,%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='202.000000pt' height='69.000000pt' viewBox='0 0 202.000000 69.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,69.000000) scale(0.100000,-0.100000)'%0Afill='%23390049' stroke='none'%3E%3Cpath d='M120 640 l0 -50 -60 0 -60 0 0 -274 0 -274 218 -6 c511 -15 1705 -37%0A1719 -32 13 5 14 17 9 66 l-7 60 41 0 40 0 0 280 0 280 -950 0 -950 0 0 -50z%0Am0 -295 l0 -215 894 0 893 0 7 -47 c3 -25 5 -48 3 -50 -2 -2 -417 6 -923 17%0A-505 11 -929 20 -941 20 l-23 0 0 245 0 245 45 0 45 0 0 -215z'/%3E%3C/g%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
-    &--clipped {
-        clip-path: polygon(0 3%, 95% 0, 100% 100%, 0 95%);
-        color: var(--color-white);
-        background-color: var(--color-yellow);
-
-        &:hover {
-            color: var(--color-white);;
+    &__content {
+        &--border {
+            margin-top: -5px;
         }
     }
 }
