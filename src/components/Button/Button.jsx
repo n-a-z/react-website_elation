@@ -1,9 +1,18 @@
 import React from 'react';
 import './Button.scss';
 
-function Button() {
+function Button({
+    children,
+    btnUrl,
+    btnClass
+}) {
     return (
-        <div className="my-btn">Button</div>
+        <a href={btnUrl} className={`my-btn ${btnClass}`}>
+            <div className={`my-btn__content`}
+            >
+                {children}
+            </div>
+        </a>
     )
 }
 

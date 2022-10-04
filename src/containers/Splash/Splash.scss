@@ -1,8 +1,57 @@
 .splash {
+    position: relative;
     background-color: var(--color-green);
+    background-image: url('../../images/splash_01.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    min-height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    display: flex;
+    align-items: center;
 
+    @media (min-width: 992px) {
+        min-height: 90vh;
+    }
+
+    &__col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (min-width: 992px) {
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        color: var(--color-blue);
+        margin-bottom: 1em;
+
+        @media (min-width: 992px) {
+            text-align: left;
+            font-size: 74px;
+
+        }
+    }
+    
+    .slick-slider {
+        // position: static;
+    }
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
     .slick-dots {
         text-align: left;
-        bottom: 25px;
+        bottom: -125px;
+        @media (min-width: 992px) {
+            bottom: -25px;
+        }
     }
 }
