@@ -1,7 +1,7 @@
 .cta {
     background-image: url('../../images/cta_bg.jpg');
     color: var(--color-blue);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
     margin-bottom: -50px;
 
     &__container {
