@@ -1,0 +1,42 @@
+.successful {
+    background-image: url('../../images/successful_bg.jpg');
+    color: var(--color-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    padding-top: 125px;
+    padding-bottom: 125px;
+    margin-bottom: -50px;
+
+    &__col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 992px) {
+            &:first-of-type {
+                padding-bottom: 250px;
+            }
+            &:last-of-type {
+                padding-top: 250px;
+            }
+        }
+    }
+
+    &__box {
+        background-color: var(--color-white);
+        display: inline-block;
+        text-align: left;
+        padding: 75px;
+        clip-path: polygon(5% 7%, 100% 0, 99% 94%, 0 100%);
+    }
+
+    &__txt {
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+
+    &__title {
+        color: var(--color-green);
+        font-size: 54px;
+        font-weight: 600;
+    }
+}
